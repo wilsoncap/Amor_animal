@@ -1,6 +1,6 @@
 .header {
-    background: $primary-color;
-    color: rgb(241, 205, 205);
+    background-image: url("/public/img/trama1.png");
+    // color: rgb(241, 205, 205);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,10 +22,10 @@
     list-style: none;
 
     a {
-        color: white;
+        color: $color_fuente_1;
         text-decoration: none;
         padding-left: 20px;
-        font-size: 18px;
+        font-size: 16px;
         font-family: Arial, Helvetica, sans-serif;
     }
 
