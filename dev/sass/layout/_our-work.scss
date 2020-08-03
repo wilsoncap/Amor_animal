@@ -1,0 +1,19 @@
+.our-work {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(167, 234, 255);
+
+    .our-work-title {
+        color: gray;
+        text-align: center;
+        padding-top: 30px;
+
+    }
+}
+
+.our-work-items {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+
+}
