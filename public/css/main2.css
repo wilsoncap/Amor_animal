@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, auto 600px 40px);
+  grid-template-areas: "header header header header header header header header header header header header" "banner banner banner banner banner banner banner banner banner banner banner banner" "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+/* Media Queries Mixin
+**********************/
+.main-header {
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: header;
+  height: 50px;
+  position: relative;
+}
+.main-header input {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  background-color: #F06301;
+  height: 50px;
+}
+
+.nav-link {
+  list-style: none;
+  margin-right: 20px;
+}
+.nav-link a {
+  text-decoration: none;
+  color: #080101;
+}
+
+.main-header label {
+  font-size: 30px;
+  color: white;
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .main-header label {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-header label {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main-header label {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-header label {
+    display: none;
+  }
+}
+
+.items {
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  height: auto;
+  margin-top: 50px;
+  width: 100%;
+}
+.items item {
+  padding-top: 10px;
+  border-top: 1px solid white;
+  width: 100%;
+}
+
+.banner {
+  height: 600px;
+  width: 100%;
+  background-color: #4fc7f7;
+  grid-area: banner;
+}
+.banner h1 {
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.botones {
+  height: 50px;
+}
+.botones a {
+  padding: 10px 50px;
+  text-decoration: none;
+  background-color: #F06301;
+  border-radius: 30px;
+  color: white;
+  margin-right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}

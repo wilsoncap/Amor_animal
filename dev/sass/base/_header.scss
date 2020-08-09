@@ -1,43 +1,98 @@
-.header {
-    background-image: url("/public/img/trama1.png");
-    // color: rgb(241, 205, 205);
+.main-header {
+    position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    height: 90px;
-    box-shadow: 0px 3px 15px #b3b3b3;
+    height: 65px;
+    width: 100vw;
+    padding: 0 10vw;
+    color: $color_fuente_1;
+    z-index: 1;
+    transition: .4s ease-out;
 
-    .header-logo {
-        // margin-left: 20px;
-        // text-align: center;
-        width: 200px;
-        height: 80px;
-        padding-left: 20px;
+    img {
+        position: absolute;
+        left: 30px;
     }
-}
-
-.header-menu {
-    display: flex;
-    margin-right: 20px;
-    list-style: none;
 
     a {
-        color: $color_fuente_1;
         text-decoration: none;
-        padding-left: 20px;
-        font-size: 16px;
-        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-transform: uppercase;
+        // margin-right: 10px;
     }
 
-    @include media(mobile-only) {
-        display: none;
-    }
-
-    @include media(tablet) {
-        display: none;
-    }
-
-    @include media(desktop-s) {
+    .nav-links {
         display: flex;
+        list-style: none;
+
+        .nav-link {
+            a {
+                margin: .2rem;
+                padding: 1rem .5rem;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.2);
+
+                }
+            }
+        }
+    }
+
+    .icon-menu {
+        position: relative;
+        right: -30%;
+        padding: 22px 10px;
+        cursor: pointer;
+        z-index: 1;
+        display: none;
+        background-color: $secondary-color;
+
+        &__line {
+            display: block;
+            position: relative;
+            background-color: $color_fuente_1;
+            height: 2px;
+            width: 20px;
+            border: 4px;
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border-radius: 4px;
+                background-color: black;
+                transition: background .8s ease;
+            }
+
+            &::before {
+                transform: translateY(-5px);
+            }
+
+            &::after {
+                transform: translateY(5px);
+            }
+        }
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    &.scrolled {
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+    }
+
+    .icon-menu {
+
+        &__line,
+        &__line::before,
+        &__line::after {
+            background-color: white;
+        }
     }
 }

@@ -1,45 +1,26 @@
 <DOCTYPE html
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="css/main.css"/>
-  </head>
+  <head></head>
+  <link rel="stylesheet" href="css/main.css"/>
   <body>
-    <!--HEADER----------------------------------------------------------------->
-    <header class="header"><img class="header-logo" src="img/logo.png" alt="logo"/>
-      <nav>
-        <ul class="header-menu">
-          <il><a href="/">home</a></il>
-          <il><a href="/">Quienes somos</a></il>
-          <il><a href="/">Nuestra labor</a></il>
-          <il><a href="/">Adopciones</a></il>
-          <il><a href="/">Donaciones</a></il>
-          <il><a href="/">contacto</a></il>
+    <div class="container">
+      <!--HEADER----------------------------------------------------------------->
+      <header class="main-header"><img src="/" alt="foto"/>
+        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+        <label class="icon-menu" for="menu-btn"><span class="icon-menu__line"></span></label>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="#">home</a></li>
+          <li class="nav-link"><a href="#">about me</a></li>
+          <li class="nav-link"><a href="#">skill</a></li>
+          <li class="nav-link"><a href="#">portfolio</a></li>
+          <li class="nav-link"><a href="#">contact</a></li>
         </ul>
-      </nav>
-    </header>
-    <!-- BANNER---------------------------------------------------------------->
-    <div class="banner">
-      <h1>Unidos en un mismo sentir por el bienestar de nuestros callegeritos</h1>
-      <div class="botones"><a href="/">Quiero ayudar</a><a href="/">Quiero adoptar</a></div>
+      </header>
+      <!-- BANNER---------------------------------------------------------------->
+      <div class="banner"></div>
+      <!--FOOTER-------------------------------------------------------------->
+      <footer class="footer"></footer>
     </div>
-    <!--ABOUT-WE--------------------------------------------------------------->
-    <div class="about_we">
-      <div class="about_we-foto"></div>
-      <div class="about_we-description">
-        <h2>somos</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quia vitae necessitatibus, laboriosam ea ab incidunt! Et cupiditate deserunt omnis, sint aliquid id veritatis velit nisi incidunt, suscipit, eligendi doloribus!</p>
-      </div>
-    </div>
-    <!--OUR-WORK--------------------------------------------------------------->
-    <section class="our-work"></section>
-    <section class="contacto">
-      <h2>Contacto</h2><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1LfLqOAhRJQ5qP4H6xsPtSAgDZ0fnOpMe" width="640" height="480"></iframe>
-    </section>
-    <!--FOOTER-------------------------------------------------------------->
-    <footer class="footer">
-      <p>hecho por wilson</p>
-    </footer>
+    <script src="/public/js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,110 @@
+.main-header {
+    background-color: pink;
+    // width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    height: 50px;
+    position: relative;
+
+    input {
+        display: none;
+    }
+
+
+}
+
+//--contenedor lista
+.nav-links {
+    display: flex;
+    align-items: center;
+    background-color: $secondary-color;
+    height: 50px;
+
+    // @include media(mobile-only) {
+    //     display: none;
+    // }
+
+    // @include media(tablet) {
+
+    // }
+
+    // @include media(desktop-s) {
+    //     display: flex;
+    // }
+
+    // @include media(desktop-m) {
+    //     display: flex;
+    // }
+
+
+}
+
+//--items de la lista
+.nav-link {
+    list-style: none;
+    margin-right: 20px;
+
+    a {
+        text-decoration: none;
+        color: rgb(8, 1, 1);
+
+    }
+
+    // @include media(mobile-only) {
+    //     display: none;
+    // }
+
+    // @include media(tablet) {
+
+
+    // }
+
+    // @include media(desktop-s) {
+    //     display: flex;
+    // }
+
+    // @include media(desktop-m) {
+    //     // display: flex;
+    // }
+}
+
+//--menu hamburguesa
+.main-header label {
+    font-size: 30px;
+    color: white;
+    display: none;
+
+    @include media(mobile-only) {
+        display: inline-block;
+    }
+
+    @include media(tablet) {
+        display: inline-block;
+    }
+
+    @include media(desktop-s) {
+        display: none;
+    }
+
+    @include media(desktop-m) {
+        display: none;
+    }
+}
+
+
+.items {
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    height: auto;
+    margin-top: 50px;
+    width: 100%;
+
+    item {
+        padding-top: 10px;
+        border-top: 1px solid white;
+        width: 100%;
+    }
+}

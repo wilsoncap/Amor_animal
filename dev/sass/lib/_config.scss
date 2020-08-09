@@ -12,4 +12,15 @@ body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto 600px 40px);
+    grid-template-areas:
+        "header header header header header header header header header header header header"
+        "banner banner banner banner banner banner banner banner banner banner banner banner"
+        "footer footer footer footer footer footer footer footer footer footer footer footer"
 }

@@ -1,41 +1,33 @@
 <DOCTYPE html
 html(lang="en")
-    block head
     head
+    block head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="css/main.css")
     include ../base/_mixins.pug
     body
-        //HEADER---------------------------------------------------------------
-        header.header
-            img.header-logo(src="img/logo.png", alt="logo")
-            nav
-                ul.header-menu
-                    il: a(href="/") home
-                    il: a(href="/") Quienes somos
-                    il: a(href="/") Nuestra labor
-                    il: a(href="/") Adopciones
-                    il: a(href="/") Donaciones
-                    il: a(href="/") contacto
+        .container
+            //HEADER---------------------------------------------------------------
+            block header
 
-        block banner
+            block banner
 
-        block about_me
+            block about_me
 
-        block our-work
+            block our-work
 
-        block adociones
+            block adociones
 
-        block donaciones
+            block donaciones
 
-        block galeria-fotos
+            block galeria-fotos
 
-        block videos
+            block videos
 
-        block contacto
+            block contacto
 
-        block footer
-            //FOOTER------------------------------------------------------------
-            footer.footer
-                p hecho por wilson
+            block footer
+                //FOOTER------------------------------------------------------------
+                include ../base/_footer.pug
+
+        script(src='/public/js/app.js')
